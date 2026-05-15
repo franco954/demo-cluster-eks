@@ -1,0 +1,42 @@
+# State files - contienen info sensible (IPs, ARNs, etc.)
+*.tfstate
+*.tfstate.backup
+*.tfstate.*.backup
+
+# Directorio de state local
+.terraform/
+
+# Lock file de providers (opcional, algunos equipos lo commitean)
+# .terraform.lock.hcl
+
+# Variables con secretos
+*.tfvars
+*.tfvars.json
+
+# Archivos de plan
+*.tfplan
+*.plan
+
+# Crash logs de Terraform
+crash.log
+crash.*.log
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI config
+.terraformrc
+terraform.rc
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
